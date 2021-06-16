@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+    margin: 0px;
+    padding: 0%;
+    color: black;
+    background: #26d0ce;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* #e55d87
+→ 
+#5fc3e4  */
+
+
+/* #26d0ce */
+
+
+/* whole .container */
+
+.container {
+    width: 80%;
+    margin: auto auto;
+}
+
+
+/* title  */
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+/* search bar  */
+
+.search {
+    width: 60%;
+    min-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city {
+    width: 400px;
+    height: 30px;
+    margin: 0px 10px;
+    border: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#submit {
+    width: 100px;
+    height: 35px;
+    margin: 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 5px;
+}
+
+
+/* city .display  */
+
+.display {
+    width: 100%;
+}
+
+.row1 {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row2 {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row3 {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 10px;
+    /* shadow */
+    box-shadow: -2px 2px 9px -1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: -2px 2px 9px -1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -2px 2px 9px -1px rgba(0, 0, 0, 0.33);
+}
+
+img {
+    width: 70px;
+    right: 0px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+
+/* search .display  */
+
+#change {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* flex  */
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+#change .change {
+    width: 80%;
+}
+
+#change img {
+    margin: auto auto;
+}
+
+#change h3 {
+    text-align: center;
+}

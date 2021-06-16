@@ -36,7 +36,7 @@ search.addEventListener("click", function () {
           </div>
           <div>
               <p>
-              Humidity : ${humidity}%<br /> Humidity : ${pressure} (mb)
+              Humidity : ${humidity}%<br /> Pressure : ${pressure} (mb)
               </p>
           </div>
           <div>

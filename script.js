@@ -6,9 +6,10 @@ console.log(typeof city.value);
 
 search.addEventListener("click", function () {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=" +
+    "https:api.openweathermap.org/data/2.5/weather?q={key}" +
       city.value +
-      "&appid=b2a26297d10663f067017496d0e7ab43"
+      "&appid="
+//     inter your key
   )
     .then((response) => response.json())
     .then((data) => {
@@ -53,7 +54,7 @@ search.addEventListener("click", function () {
 //indore
 function Indore() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Indore&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Indore&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -74,7 +75,7 @@ function Indore() {
 // bhopal
 function Bhopal() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=bhopal&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=bhopal&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -95,7 +96,7 @@ function Bhopal() {
 // delhi
 function Delhi() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=delhi&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=delhi&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -116,7 +117,7 @@ function Delhi() {
 // Mumbai
 function Mumbai() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Mumbai&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -137,7 +138,7 @@ function Mumbai() {
 // Kolkata
 function Kolkata() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Kolkata&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -158,7 +159,7 @@ function Kolkata() {
 // Chennai
 function Chennai() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Chennai&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Chennai&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -179,7 +180,7 @@ function Chennai() {
 // Banglore
 function Bangalore() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Bangalore&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Bangalore&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -200,7 +201,7 @@ function Bangalore() {
 // pune
 function Pune() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Pune&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Pune&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -221,7 +222,7 @@ function Pune() {
 // Ahmedabad
 function Ahmedabad() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Ahmedabad&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Ahmedabad&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -242,7 +243,7 @@ function Ahmedabad() {
 // Cochin
 function Cochin() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=cochin&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=cochin&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -263,7 +264,7 @@ function Cochin() {
 // Kota
 function Kota() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Kota&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Kota&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -284,7 +285,7 @@ function Kota() {
 // Shimla
 function Shimla() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Shimla&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Shimla&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -305,7 +306,7 @@ function Shimla() {
 // Srinagar
 function Srinagar() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Srinagar&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Srinagar&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -326,7 +327,7 @@ function Srinagar() {
 // Patna
 function Patna() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=patna&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=patna&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -347,7 +348,7 @@ function Patna() {
 // Rishikesh
 function Rishikesh() {
   fetch(
-    "https:api.openweathermap.org/data/2.5/weather?q=Rishikesh&appid=b2a26297d10663f067017496d0e7ab43"
+    "https:api.openweathermap.org/data/2.5/weather?q=Rishikesh&appid={key}"
   )
     .then((response) => response.json())
     .then((data) => {

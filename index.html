@@ -2,203 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Bootstrap-Task8</title>
-    <style>
-        .bg-pink {
-            background-color: pink;
-        }
-        
-        .banner {
-            background-image: url('Images/pexels-helena-lopes-4279107.jpg');
-            height: 70vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 0% 40%;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .topnav {
-                text-align: center;
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather API</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container">
+        <div class="title">
+            <h1>Weather API Project</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="city" name="city" placeholder="Enter City Name" /><br />
+            <button id="submit">SEARCH</button>
+        </div>
+        <div class="display">
+            <div id="change">
+                <!-- yha -->
 
-        <!-- upnav -->
-        <div class="container m-auto">
-            <div class="row d-flex flex-wrap-reverse topnav">
-                <div class="col-md-6 mt-3 text-info pl-5 justify-content-start">
-                    <h2>OPTIMA</h2>
+                <!-- yaha -->
+            </div>
+            <!-- row 1 -->
+
+            <div class="row1">
+                <!-- column  -->
+                <div class="column1 column" id="r1c1" onclick="Indore()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
-                <div class="col-md-6 mt-3">
-                    <div class="row text-center">
-                        <div class="m-auto">
-                            <h4>CALL: +91 9999 888 777</h4>
-                        </div>
-                        <div class="m-auto">
-                            <button class="ml-5 btn btn-info">Make an appointment</button>
-                        </div>
+                <!-- column  -->
+                <div class="column2 column" id="r1c2" onclick="Bhopal()">
+                    <div>
+                        <img src="images/sun.png" alt="" />
                     </div>
-
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column3 column" id="r1c3" onclick="Delhi()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column4 column" id="r1c4" onclick="Mumbai()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column5 column" id="r1c5" onclick="Kolkata()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
             </div>
-        </div>
-        <!-- upnav -->
 
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md bg-light navbar-light text-center">
-            <!-- Brand -->
-            <a class="navbar-brand " href="#">OPTIMA</a>
-
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav pl-3 col-md-6 ">
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#cupcakes">About</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#cookies">Shops</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#aboutus">Pages</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#faq">News</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#terms">Services</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav col-md-6 text-center justify-content-end ">
-                    <li class="nav-itme col-md-1">
-                        <a href="">
-                            <span class="fa fa-search text-dark" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li class="nav-itme col-md-1">
-                        <a href="">
-                            <span class="fa fa-user text-dark" aria-hidden="true"></span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-        <!-- navbar -->
-
-        <!-- banner -->
-        <div class="banner container-fluid d-flex">
-            <div class="container align-self-center text-dark text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h1 class="text-dark"><strong> A Strong Image of <br> Yourself is Our Success</strong></h1>
-                <button class="btn btn-info p-3 m-2">ABOUT US</button>
-                <button class="btn btn-light p-3 m-2">BOOK NOW</button>
-
-            </div>
-        </div>
-        <!-- banner -->
-
-        <!-- about -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 bg-info p-5">
-                    <h2 class="text-light">For Adults</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo aliquid voluptatum quam quaerat officiis et! Cumque dolores iste dolorem sequi praesentium pariatur dolorum! Qui eos autem nostrum odit temporibus nobis hic porro iusto quos fuga,
-                    modi illo error ullam, quaerat quas vitae placeat ducimus, obcaecati deleniti expedita minima soluta.
+            <!-- row 2 -->
+            <div class="row2">
+                <!-- column  -->
+                <div class="column1 column" id="r2c1" onclick="Chennai()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
-                <div class="col-md-4 bg-warning p-5">
-                    <h2 class="text-light">For Children</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo aliquid voluptatum quam quaerat officiis et! Cumque dolores iste dolorem sequi praesentium pariatur dolorum! Qui eos autem nostrum odit temporibus
-                    nobis hic porro iusto quos fuga, modi illo error ullam, quaerat quas vitae placeat ducimus, obcaecati deleniti expedita minima soluta.</div>
-                <div class="col-md-4 bg-info p-5">
-                    <h2 class="text-light">For Business</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo aliquid voluptatum quam quaerat officiis et! Cumque dolores iste dolorem sequi praesentium pariatur dolorum! Qui eos autem nostrum odit temporibus nobis hic porro iusto quos fuga,
-                    modi illo error ullam, quaerat quas vitae placeat ducimus, obcaecati deleniti expedita minima soluta.
-                </div>
-            </div>
-        </div>
-        <!-- about -->
-
-        <!-- shops -->
-        <div class="container m-auto">
-            <div class="row mt-5 pt-5">
-                <div class="col-md-6 shadow p-0">
-                    <img src="Images/pexels-sora-shimazaki-5668859.jpg" alt="" width="100%" class="image-responsive">
-                </div>
-                <div class="col-md-6 p-5">
-                    <h3>We Are The Best Support For You</h3>
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iusto et dignissimos? Minima delectus deleniti consequatur aspernatur laborum ducimus velit id ipsam perferendis a, commodi porro vero, natus dolorum. Itaque?.</p>
-                    <button class="btn btn-info mt-4 pl-3 pr-3">ABOUT US</button>
-                </div>
-            </div>
-        </div>
-        <!-- shops -->
-
-        <!-- pages -->
-        <div class="container">
-            <div class="col-md-12 text-center m-5 pt-5">
-                <p>WHAT WE OFFER FOR YOU </p>
-                <h1>Therapies & Treatment</h1>
-            </div>
-
-            <div class="row  m-auto">
-
-                <div class="card text-center m-3" style="width:30%">
-                    <img class="card-img-top" src="Images/pexels-sora-shimazaki-5668859.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Couple Theraphy</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, porro.</p>
-                        <a href="#" class="btn btn-info">View More</a>
+                <!-- column  -->
+                <div class="column2 column" id="r2c2" onclick="Bangalore()">
+                    <div>
+                        <img src="images/sun.png" alt="" />
                     </div>
-
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
-
-                <div class="card text-center m-3" style="width:30%">
-                    <img class="card-img-top" src="Images/pexels-sora-shimazaki-5668859.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Anxity Disorder</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, porro.</p>
-                        <a href="#" class="btn btn-info">View More</a>
+                <!-- column  -->
+                <div class="column3 column" id="r2c3" onclick="Pune()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column4 column" id="r2c4" onclick="Ahmedabad()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column5 column" id="r2c5" onclick="Cochin()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="row3">
+                <!-- column  -->
+                <div class="column1 column" id="r3c1" onclick="Chennai()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column2 column" id="r3c2" onclick="Bangalore()">
+                    <div>
+                        <img src="images/sun.png" alt="" />
                     </div>
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
-
-
-                <div class="card text-center m-3" style="width:30%">
-                    <img class="card-img-top" src="Images/pexels-sora-shimazaki-5668859.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Treating Depression</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, porro.</p>
-                        <a href="#" class="btn btn-info">View More</a>
-                    </div>
+                <!-- column  -->
+                <div class="column3 column" id="r3c3" onclick="Pune()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
                 </div>
-
-
+                <!-- column  -->
+                <div class="column4 column" id="r3c4" onclick="Ahmedabad()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
+                <!-- column  -->
+                <div class="column5 column" id="r3c5" onclick="Cochin()">
+                    <img src="images/sun.png" alt="" />
+                    <h3>Indore</h3>
+                    <p>
+                        Rainy <br /> 40
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- pages -->
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
